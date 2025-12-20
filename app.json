@@ -8,6 +8,11 @@
     "scheme": "calculatrice",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ajgouan.calculatrice",
