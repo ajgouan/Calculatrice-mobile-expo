@@ -13,7 +13,14 @@ export default function Index() {
    const [operation, setOperation] = useState("");
 
    const handleNumberInput = (number: string) => {
-      setCurrentNumber(currentNumber === "0" ? number : currentNumber + number);
+      if (number === ".") {
+         if (currentNumber.includes(".")) return;
+         setCurrentNumber(currentNumber ? currentNumber + "." : "0.");
+      } else {
+         setCurrentNumber(
+            currentNumber === "0" ? number : currentNumber + number
+         );
+      }
    };
 
    const handleOperation = (op: string) => {
