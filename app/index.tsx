@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import {
-   SafeAreaView,
-   StyleSheet,
-   Text,
-   TouchableOpacity,
-   View,
-} from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
    const [currentNumber, setCurrentNumber] = useState("");
